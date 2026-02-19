@@ -22,9 +22,11 @@ const HomePage: React.FC = () => {
 
         <h1 className="text-5xl sm:text-7xl font-black text-white mb-8 leading-[1.1] tracking-tighter uppercase italic">
           Vença o Mercado <br className="hidden sm:block" />
-          das apostas Desportivas <br className="hidden sm:block" />
+          das Apostas Desportivas <br className="hidden sm:block" />
           com <span className="text-gold">Alertas Inteligentes</span>
         </h1>
+        <p>Site atualizado</p>
+
 
         <p className="text-slate-400 text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
           A plataforma de scanning profissional que transforma dados brutos em
