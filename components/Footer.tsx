@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ShieldAlert, Info } from 'lucide-react';
+import AffiliatePartners from './AffiliatePartners';
 
 const Footer: React.FC = () => {
   return (
@@ -44,16 +45,26 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-12 border-t border-white/5">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="flex items-center gap-3 text-slate-600 text-[10px] font-black uppercase tracking-[0.2em] italic">
-              <Info className="h-4 w-4 text-slate-700" />
-              <span>Dados processados em clusters de baixa latência</span>
-            </div>
-            <p className="text-slate-700 text-[10px] font-black uppercase tracking-[0.2em]">
-              &copy; {new Date().getFullYear()} GOLO AO VIVO TECHNOLOGIES. LONDON / LISBON.
-            </p>
+      </div>
+
+      <div className="border-t border-white/5 pt-12 mb-12">
+        <div className="text-center mb-8">
+          <p className="text-slate-500 text-xs font-black uppercase tracking-widest mb-6">
+            Parceiros Oficiais de Apostas
+          </p>
+          <AffiliatePartners variant="footer" />
+        </div>
+      </div>
+
+      <div className="pt-12 border-t border-white/5">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex items-center gap-3 text-slate-600 text-[10px] font-black uppercase tracking-[0.2em] italic">
+            <Info className="h-4 w-4 text-slate-700" />
+            <span>Dados processados em clusters de baixa latência</span>
           </div>
+          <p className="text-slate-700 text-[10px] font-black uppercase tracking-[0.2em]">
+            &copy; {new Date().getFullYear()} GOLO AO VIVO TECHNOLOGIES. LONDON / LISBON.
+          </p>
         </div>
       </div>
     </footer>

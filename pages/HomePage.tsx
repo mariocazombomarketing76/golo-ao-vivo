@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { Zap, ShieldCheck, Target, TrendingUp, ChevronRight, Crown } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { HISTORY_STATS } from '../constants';
+import TrustStrip from '../components/TrustStrip';
+import ConversionBlock from '../components/ConversionBlock';
 
 const HomePage: React.FC = () => {
   return (
@@ -25,8 +27,8 @@ const HomePage: React.FC = () => {
           das Apostas Desportivas <br className="hidden sm:block" />
           com <span className="text-gold">Alertas Inteligentes</span>
         </h1>
-        <p>Site atualizado</p>
 
+        <TrustStrip className="mb-12" />
 
         <p className="text-slate-400 text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
           A plataforma de scanning profissional que transforma dados brutos em

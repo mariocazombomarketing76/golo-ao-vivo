@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Check, Zap, Crown, Globe, MessageSquare, BellRing } from 'lucide-react';
+import AffiliatePartners from '../components/AffiliatePartners';
 
 const VIPPage: React.FC = () => {
   const plans = [
@@ -47,6 +48,15 @@ const VIPPage: React.FC = () => {
           Escolha o seu nível de vantagem. Junte-se a centenas de utilizadores profissionais que
           recebem os nossos alertas direto no Telegram em milissegundos.
         </p>
+
+        <div className="mt-8 flex justify-center">
+          <div className="inline-block bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <p className="text-white text-sm font-bold uppercase tracking-widest mb-4">
+              Membros VIP utilizam plataformas confiáveis para maximizar ganhos
+            </p>
+            <AffiliatePartners variant="strip" />
+          </div>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24 relative">
@@ -54,8 +64,8 @@ const VIPPage: React.FC = () => {
           <div
             key={i}
             className={`relative group glass p-10 rounded-[2.5rem] border transition-all duration-500 hover:-translate-y-2 ${plan.isPopular
-                ? 'border-red-600 bg-red-600/5 shadow-[0_30px_60px_rgba(255,30,30,0.15)] ring-1 ring-red-600/50'
-                : 'border-white/5 hover:border-white/20'
+              ? 'border-red-600 bg-red-600/5 shadow-[0_30px_60px_rgba(255,30,30,0.15)] ring-1 ring-red-600/50'
+              : 'border-white/5 hover:border-white/20'
               }`}
           >
             {plan.isPopular && (
@@ -84,8 +94,8 @@ const VIPPage: React.FC = () => {
             </ul>
 
             <button className={`w-full py-5 rounded-2xl font-black uppercase tracking-widest text-sm transition-all active:scale-95 ${plan.isPopular
-                ? 'bg-white text-black hover:bg-slate-200 premium-shadow'
-                : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
+              ? 'bg-white text-black hover:bg-slate-200 premium-shadow'
+              : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
               }`}>
               {plan.button}
             </button>

@@ -5,6 +5,8 @@ import { Bell, ArrowRight, Lock, Clock, Check } from 'lucide-react';
 import { MOCK_MATCHES } from '../constants';
 import AlertCard from '../components/AlertCard';
 import { useLiveAlerts } from '../hooks/useLiveAlerts';
+import TrustStrip from '../components/TrustStrip';
+import ConversionBlock from '../components/ConversionBlock';
 
 const FreeAlertsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'alerts' | 'matches'>('alerts');
@@ -61,6 +63,8 @@ const FreeAlertsPage: React.FC = () => {
                 {alerts.map((alert) => (
                   <AlertCard key={alert.id} alert={alert} />
                 ))}
+
+                <ConversionBlock />
 
                 {/* VIP Upsell Card */}
                 <div className="relative overflow-hidden glass rounded-3xl border border-red-600/30 p-8 group">
